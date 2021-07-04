@@ -12,6 +12,8 @@
    Cuando ejecutéis este comando, veréis un output como este (eso significará que tenéis conexión a base de datos):
    
    `CREATE TABLE backoffice_users (id INT AUTO_INCREMENT NOT NULL, username VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE 'utf8_unicode_ci' ENGINE = InnoDB`
+7. Para lanzar el server de symfony en local ejecutad en la raiz del proyecto: `symfony server:start` y os creará un server al vuelo con vuesto localhost:puerto
+
 
 ###### EJERCICIO:
 Tenemos nuestro negocio de concesionario donde nuestro inventario lo tenemos en un excel en la oficina, queremos exportar nuestro excel a una base de datos para poder manejar nuestro inventario desde una web y a distancia, dado que la pandemia nos ha invitado a poder trabajar desde casa.
