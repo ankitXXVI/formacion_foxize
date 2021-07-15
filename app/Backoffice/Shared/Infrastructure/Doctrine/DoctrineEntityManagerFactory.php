@@ -68,7 +68,7 @@ final class DoctrineEntityManagerFactory
 
     private static function createConfiguration(array $contextPrefixes, bool $isDevMode): Configuration
     {
-        $config = Setup::createConfiguration($isDevMode, null, new ArrayCache());
+        $config = Setup::createConfiguration($isDevMode, null, null);
 
         $config->setMetadataDriverImpl(self::getMetadataDriver($contextPrefixes));
 
